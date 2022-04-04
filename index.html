@@ -1,109 +1,312 @@
 <!DOCTYPE html>
-<html lang="de" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Diese Seite enthält Infos über Jasmin :)" />
-    <meta name="author" content="Jasmin Fässler" />
-    <meta name="copyright" content="Jasmin Fässler" />
-    <title>Visitenkarte</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/bilder/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/bilder/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/bilder/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/bilder/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/bilder/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/bilder/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/bilder/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/bilder/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/bilder/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/bilder/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/bilder/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/bilder/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/bilder/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/bilder/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#69ffc9">
-    <meta name="msapplication-TileImage" content="assets/bilder/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#69ffc9">
-  </head>
-  <body id="body">
-    <main class="flex">
-      <!-- draggable window/div -->
-      <div id="1_window" class="window" draggable="true">
-        <div class="window-header" id="1_window-header">
-          <!-- <img class="icon-window logo" src="assets/bilder/jasmin-logo-s.svg"> -->
-          <h2>Visitenkarte</h2>
-          <!-- window control decoration -->
-          <div class="window-controls">
-            <div class="hidden"></div>
-            <div class="hidden"></div>
-            <div id="closeWindow1" onclick="closeWindow('1_window')"></div>
-          </div>
-        </div>
-        <!-- window header end -->
-        <div class="window-items">
-          <div class="window-content">
-            <div class="float-left">
-              <img class="photo-jasmin" src="assets/bilder/jasmin-logo.svg" alt="ein schönes Foto von mir">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auf der Suche nach den Schokobäumchen</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- <audio autoplay="true" src="audio/christmas.mp3"> -->
+            
+        </audio>
+        <div id="layer-4">
+            <div class="sky"></div>
+                <div class="clouds-background">
+                    <img src="img/layer-4/cloud.svg" class="cloud">
+                    <img src="img/layer-4/cloud.svg" class="cloud cloud-2">
+                    <img src="img/layer-4/cloud.svg" class="cloud cloud-3">
+                    <div class="trees-background"></div>
+                </div>
+            <div class="snowflakes">
+                <div class="snowflake">
+                    ❅
+                </div>
+                <div class="snowflake">
+                    ❅
+                </div>
+                <div class="snowflake">
+                    ❆
+                </div>
+                <div class="snowflake">
+                    ❆
+                </div>
+                <div class="snowflake">
+                    ❅
+                </div>
+                <div class="snowflake">
+                    ❆
+                </div>
+                <div class="snowflake">
+                    ❆
+                </div>
+                <div class="snowflake">
+                    ❅
+                </div>
+                <div class="snowflake">
+                    ❆
+                </div>
+                <div class="snowflake">
+                    ❆
+                </div>
             </div>
-            <div class="float-right padding-10">
-              <h3>Jasmin</h3>
-              <h4>Mediamatikerin in Ausbildung</h4>
-            </div>
-          </div>
-          <!-- button -->
-          <div class="button-wrapper">
-            <a href="mailto:jasminfaessler.ch@gmail.com" class="float-right button">Kontakt ✨</a>
-          </div>
         </div>
-      </div> <!-- window-footer closing tag -->
-
-
+        <div id="layer-3">
+            <img src="img/layer-3/Schokobaum.svg" id="schokobaum" onclick="addScore()">
+            <audio id="audio" src="audio/soundeffect.mp3"></audio>
+        </div>
+        <div id="layer-2">
+            <div id="romanshorn">
+                <img class="tree" src="img/layer-2/tree.svg" alt="">
+                <img class="tree" src="img/layer-2/fir-tree.svg" alt="">
+                <img class="sbw-house" src="img/layer-2/house-sbw.svg" alt="">
+                <img class="tree" src="img/layer-2/fir-tree.svg" alt="">
+                <img class="tree" src="img/layer-2/tree.svg" alt="">
+                <img class="tree" src=" img/layer-2/fir-tree.svg" alt="">
+                <img class="tree" src="img/layer-2/tree.svg" alt="">
+            </div>
+            <div id="sign1" class="sign">
+                <p class="text-sign">Oh Nei Harry! D’LG18er händ dich Hops gno und dini Schoki-bäum versteckt</p>
+                <button class="button-1" onclick="step(1)">weiter</button>
+            </div>
+            <div id="sign2" class="sign">
+                <p class="text-sign">Find dini Schoki-bäum!</p>
+                <img src="img/layer-2/help.png" alt="">
+                <button onclick="step(2);">start</button>
+            </div>
+        </div>
+        <div id="layer-1">
+<div id="ground"></div>
+<div id="harry-full">
+    <div class="box">
+        <!-- add class walk for animated walking, else class "stand" -->
+        <div id="body1" class="body stand">
+            <div class="head"></div>
+            <div class="left arm">
+                <div class="upper">
+                    <div class="lower">
+                    </div>
+                </div>
+            </div>
+            <div class="right arm">
+                <div class="upper">
+                    <div class="lower">
+                    </div>
+                </div>
+            </div>
+            <div class="left leg">
+                <div class="upper">
+                    <div class="lower">
+                    </div>
+                </div>
+            </div>
+            <div class="right leg">
+                <div class="upper">
+                    <div class="lower">
+                    </div>
+                </div>
+            </div>
+            <img id="harry-face" src="img/layer-1/harry1.svg" alt="">
+        </div>
+    </div>
+</div>
+            <div id="overlay" class="overlay"></div>
+            <div id="highscore" class="sign">
+                <p id="game-score">
+                    <!-- text added with javascript -->
+                </p>
+                <button onclick="restartGame()">Nomol versueche</button>
+                <button onclick="fastGame()">starte de Ultramodus</button>
+            </div>
+            <div id="rosina"></div>
+            <div id="speech-bubble"></div>
+        </div>
     </main>
-    <footer class="position-relative">
-      <div class="footer-links padding-10">
-        <a href="#" class="footer-item flex flex-align-center">
-          <img src="assets/bilder/jasmin-logo-s.svg" class="footer-logo" alt="">
-          <h4 class="footer-text margin-left margin-right lowercase hyphens-none">Jasmin Fässler</h4>
-        </a>
-        <div class="footer-item footer-text flex flex-align-center width-100">
-          <p class='footer-text margin-auto'>Diese Website wird laufend aktualisiert.</p>
+    <footer>
+        <div class="top-footer">
+            <div id="score" class="wood">
+            </div>
+            <div id="TimerBox" class="wood">
+                <p id="gameTimer"> Sekunden</p>
+            </div>
         </div>
-        <div class="margin-auto"></div>
-        <div class="margin-10 ">
-          <button id="1_windowfooter" onClick='selectWindow("1")' class="footer-item window-footer hyphens-none">
-            <p class='footer-text'>Visitenkarte</p>
-          </button>
+        <div id="countdown">
+            <div class="countdown-bg"></div>
+            <h2 id="c3">3</h2>
+            <h2 id="c2">2</h2>
+            <h2 id="c1">1</h2>
         </div>
-      
-        <button id="reloadFunction" class="hidden footer-item">
-          <!-- <img class="icon-window" src="assets/bilder/refresh.svg" alt=""> -->
-          Lade die Original Darstellung der angezeigten Fenster
-        </button>
-
-        <button class="hidden icon-button footer-item">
-            <div id="lightmode">
-              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
-              viewBox="0 0 24 24" width="24px" fill="#000000">
-              <rect fill="none" height="24" width="24" />
-              <path
-              d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
-            </svg>
-            Helles Design
-          </div>
-          <div id="darkmode">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
-              viewBox="0 0 24 24" width="24px" fill="#000000">
-              <rect fill="none" height="24" width="24" />
-              <path
-                d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
-            </svg>
-            Dunkles Design
-          </div>
-        </button>
+        <div class="bottom-footer">
+            <div class="credits">
+                <span>Made by Alisa Abazi, Vanessa Santos & Jasmin Fässler</span>
+            </div>
         </div>
     </footer>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script>
+        var score = 0;
+        var newPosition = 1;
+        //normal mode
+        window.appearTime = 1500;
+        window.times = 10;
+        scoreDisplay();
+        window.stepTwo = 1;
+        window.stepOne = 1;
+        var audio = document.getElementById("audio");
+    // score on top left of screen
+        function scoreDisplay() {
+            var scoreHtmlCode = "<div class='points'><p>" + window.score + "</p></div>";
+            document.getElementById("score").innerHTML = scoreHtmlCode;
+        }
+        function addScore() {
+            if (newPosition == 1) {
+                window.score++;
+                pointAnim();
+                audio.play();
+                scoreDisplay();
+                newPosition = 0;
+
+                function pointAnim() {
+                    document.getElementById("schokobaum").style.animationName = "point-add";
+                }
+            }
+            else {
+                // second click on same "schokobaum"
+            };
+        };
+
+
+        function step(signNumber){
+            if (signNumber == 1) {
+
+                // so that multiple clicks on the button doesn't matter
+                if (window.stepOne != 2) {
+                    // animate harry, swap face
+                    document.getElementById("highscore").style.display = "none";
+                    document.getElementById("body1").classList.toggle("walk");
+                    document.getElementById("harry-face").src = "img/layer-1/harry2.svg";
+                    // sign animation
+                    document.getElementById("sign1").style.animationName = "disappear";
+                    document.getElementById("sign2").style.display = "inline";
+                    document.getElementById("sign2").style.animationName = "appear";
+                    window.stepOne = 2;
+                    setTimeout(function () {
+                        // stop walking
+                        document.getElementById("body1").classList.toggle("walk");
+                    }, 2000); // How long do you want the delay to be (in milliseconds)? 
+                }   
+            }
+
+            else if (signNumber == 2) {
+
+                // so that multiple clicks on the button doesn't matter
+                if (window.stepTwo != 2) {
+                    document.getElementById("sign2").style.animationName = "disappear";
+                    document.getElementById("sign1").style.display = "none";
+                    document.getElementById("countdown").style.display = "flex";
+                    setTimeout(function () {
+                        // after 3 seconds start the game
+                        document.getElementById("countdown").style.display = "none";
+                        console.log("start game");
+                        gameStart();
+                        }, 3000);
+                    console.log("step(2) clicked");     
+                    window.stepTwo = 2;
+                }               
+            }
+        }
+
+            function gameStart() {
+                window.score = 0;
+                scoreDisplay();
+                console.log("the game started");
+                document.getElementById("sign2").style.display = "none";
+                document.getElementById("body1").classList.toggle("walk");
+                // animation of obstacles
+                document.getElementById("romanshorn").classList.toggle("moving");
+                // make "schokobaum" appear
+                document.getElementById('schokobaum').style.display = "inline";
+                // the "timer"
+                let i = 0;
+                while (i < times ) {
+                    task(i);
+                    i++;
+                }
+                // function for timer, changes position
+                function task(i) {
+                    setTimeout(function () {
+                        var gameTimer = 9 - i;
+                        document.getElementById("gameTimer").innerHTML = gameTimer + " Sekunden";
+                        gameTimer = 0;
+                        document.getElementById("schokobaum").style.animationName = "none";
+                        newPosition = 1;
+                        // random position for "schokobaum"
+                        posY = Math.floor(Math.random() * 50);
+                        posX = Math.floor(Math.random() * 95);
+                        poY = 100 - posY;
+                        document.getElementById('schokobaum').style.top = posY + "vh";
+                        document.getElementById('schokobaum').style.left = posX + "vw";
+                    }, appearTime * i);
+                };
+
+                setTimeout(function () {
+                    // after 10 "schokobäum" have appeared finish game
+                    finishGame();
+                    console.log("game over");
+                }, 15000);
+            }
+
+
+
+            function finishGame() { 
+                if (window.score + 2 >= window.times) {
+                    console.log("10 Punkte");
+                    document.getElementById('rosina').style.display = "inline";
+                    document.getElementById('speech-bubble').style.display = "flex";
+                };
+                document.getElementById("romanshorn").classList.toggle("moving");
+                document.getElementById('schokobaum').style.display = "none";
+                document.getElementById("body1").classList.toggle("walk");
+                document.getElementById("harry-face").src = "img/layer-1/harry1.svg";
+                //overlay//
+                document.getElementById('overlay').style.display = "inline";
+
+                document.getElementById("highscore").style.display = "flex";
+
+                var gameScore = "<p>Wow du hesch " + score + " vu " + window.times + " Schoki-bäum igsammlet!";
+                document.getElementById("game-score").innerHTML = gameScore;
+            }
+
+            function fastGame() {
+                document.getElementById('schokobaum').style.zIndex = "0";
+                document.getElementById('speech-bubble').style.display = "none";
+                document.getElementById('rosina').style.display = "none";
+                document.getElementById('highscore').style.display = "none";
+                // 750 ms * 20 times is ultra mode
+                window.appearTime = 2000;
+                window.times = 10;
+                gameStart();
+                document.getElementById("harry-face").src = "img/layer-1/harry2.svg";
+                // overlay
+                document.getElementById('overlay').style.display = "none";
+            }
+
+            function restartGame() {
+                document.getElementById('speech-bubble').style.display = "none";
+                document.getElementById('rosina').style.display = "none";
+                document.getElementById('highscore').style.display = "none";
+                document.getElementById('overlay').style.display = "none";
+                // normal mode
+                window.appearTime = 1500;
+                window.times = 10;
+                gameStart();
+                document.getElementById("harry-face").src = "img/layer-1/harry2.svg";
+            }
+    </script>
+</body>
+
 </html>
